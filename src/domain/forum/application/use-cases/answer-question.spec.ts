@@ -4,9 +4,7 @@ import { AnswersRepository } from '../repositories/answers-repository';
 import { Answer } from '../../enterprise/entities/answer';
 
 const fakeAnswersRepository: AnswersRepository = {
-  create: async (answer: Answer) => {
-    console.log(answer);
-  },
+  create: async (answer: Answer) => {},
 };
 
 test('create an answer', async () => {
